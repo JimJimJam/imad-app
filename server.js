@@ -13,6 +13,9 @@ app.get('/ui/article-1', function(req, res) {
    res.sendFile(path.join(__dirname, 'ui', 'article-1.html')); 
 });
 
+app.get('/ui/article-1', function(req, res) {
+   res.send("welcome article 1"); 
+});
 
 
 app.get('/ui/style.css', function (req, res) {

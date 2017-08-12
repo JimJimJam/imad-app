@@ -9,10 +9,68 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var article1 = 
+{
+    title:'Article One Title My Web App',
+    heading :'ARTICLE1',
+    content: `
+                        Hello whoever you are. Know this. "Now is all there is!"
+                          Welcome to article-1.
+                      
+             `
+};
+
+var article2 = 
+{
+    title:'Article Two Title My Web App',
+    heading :'ARTICLE2',
+    content: `
+                        Hello whoever you are. Know this. "Now is all there is!"
+                          Welcome to article-2.
+                      
+             `
+};
+
+
+function createTemplate(data)
+{
+    var $title = data.title;
+    var $head = data.head;
+    var $content = data.content;
+    
+        var htmlTemplate = `
+            <!doctype html>
+            <html>
+            <head>
+                  <title>
+                             {$title}  
+                  
+                  </title>
+                
+                  <meta name="viewport" contetn="width=device-width,initial-scale=1" />
+                  <link href="style.css" rel="stylesheet"/>
+            
+            </head>
+            <body>
+             <div class="container">
+             
+             <h3>
+                    {$heading}
+             </h3>
+                 <p>
+                    {$content}
+                 </p>
+             </div> 
+            </body>
+            </html>
+            
+            `;
+            return htmlTemplate;
+}
 
 
 app.get('/ui/article-1.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-1.html'));
+  res.send(createTemplate(article1));
 });
 
 app.get('/ui/article-2.html', function (req, res) {

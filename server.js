@@ -34,9 +34,9 @@ var article2 =
 
 function createTemplate(data)
 {
-    var $title = data.title;
-    var $head = data.head;
-    var $content = data.content;
+    var title = data.title;
+    var head = data.head;
+    var content = data.content;
     
         var htmlTemplate = `
             <!doctype html>

@@ -43,7 +43,7 @@ function createTemplate(data)
             <html>
             <head>
                   <title>
-                             {$title}  
+                             ${title}  
                   
                   </title>
                 
@@ -55,10 +55,10 @@ function createTemplate(data)
              <div class="container">
              
              <h3>
-                    {$heading}
+                    ${heading}
              </h3>
                  <p>
-                    {$content}
+                    ${content}
                  </p>
              </div> 
             </body>

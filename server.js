@@ -12,7 +12,7 @@ app.get('/', function (req, res) {
 var article1 = 
 {
     title:'Article One Title My Web App',
-    heading :'ARTICLE1',
+    heading:'ARTICLE1',
     content: `
                         Hello whoever you are. Know this. "Now is all there is!"
                           Welcome to article-1.
@@ -35,7 +35,7 @@ var article2 =
 function createTemplate(data)
 {
     var title = data.title;
-    var head = data.head;
+    var heading = data.head;
     var content = data.content;
     
         var htmlTemplate = `

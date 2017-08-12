@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 
 var article1 = 
 {
-    title:'Article One Title My Web App',
+    title:'Article One | My Web App',
     heading:'ARTICLE1',
     content: `
                         Hello whoever you are. Know this. "Now is all there is!"
@@ -22,7 +22,7 @@ var article1 =
 
 var article2 = 
 {
-    title:'Article Two Title My Web App',
+    title:'Article Two | My Web App',
     heading :'ARTICLE2',
     content: `
                         Hello whoever you are. Know this. "Now is all there is!"
@@ -35,7 +35,7 @@ var article2 =
 function createTemplate(data)
 {
     var title = data.title;
-    var heading = data.head;
+    var heading = data.heading;
     var content = data.content;
     
         var htmlTemplate = `

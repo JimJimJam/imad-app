@@ -75,9 +75,7 @@ app.get('/ui/:articleSelect', function (req, res) {
   res.send(createTemplate(articles(articleSelect)));
 });
 
-app.get('/ui/article-2.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-2.html'));
-});
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));

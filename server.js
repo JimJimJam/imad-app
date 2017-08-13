@@ -72,7 +72,7 @@ function createTemplate(data)
 
 var articleSelect = req.params.articleSelect;
 app.get('/ui/:articleSelect', function (req, res) {
-  res.send(createTemplate(articles(articleSelect)));
+  res.send(createTemplate(articles[articleSelect]));
 });
 
 

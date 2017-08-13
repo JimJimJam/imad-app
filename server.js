@@ -8,27 +8,29 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+var articles = {
+                    article1 :
+                    {
+                        title:'Article One | My Web App',
+                        heading:'ARTICLE1',
+                        content: `
+                                            Hello whoever you are. Know this. "Now is all there is!"
+                                              Welcome to article-1.
+                                          
+                                 `
+                    },
 
-var article1 = 
-{
-    title:'Article One | My Web App',
-    heading:'ARTICLE1',
-    content: `
-                        Hello whoever you are. Know this. "Now is all there is!"
-                          Welcome to article-1.
-                      
-             `
-};
+                    article2 : 
+                    {
+                        title:'Article Two | My Web App',
+                        heading :'ARTICLE2',
+                        content: `
+                                            Hello whoever you are. Know this. "Now is all there is!"
+                                              Welcome to article-2.
+                                          
+                                 `
+                    }
 
-var article2 = 
-{
-    title:'Article Two | My Web App',
-    heading :'ARTICLE2',
-    content: `
-                        Hello whoever you are. Know this. "Now is all there is!"
-                          Welcome to article-2.
-                      
-             `
 };
 
 
@@ -68,9 +70,9 @@ function createTemplate(data)
             return htmlTemplate;
 }
 
-
-app.get('/ui/article-1.html', function (req, res) {
-  res.send(createTemplate(article1));
+var articleSelect = req.params.articleSelect;
+app.get('/ui/:articleSelect', function (req, res) {
+  res.send(createTemplate(articleSelect));
 });
 
 app.get('/ui/article-2.html', function (req, res) {

@@ -78,7 +78,7 @@ app.get('/:articleSelect', function (req, res) {
 
 
 app.get('/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
 app.get('/madi.png', function (req, res) {

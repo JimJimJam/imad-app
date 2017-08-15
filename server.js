@@ -17,6 +17,14 @@ app.get('/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
+
+app.get('/:articleSelect', function (req, res) {
+    var articleSelect = req.params.articleSelect;
+  res.send(createTemplate(articles[articleSelect]));
+});
+
+
+
 var articles = {
                     article1 :
                     {
@@ -80,10 +88,6 @@ function createTemplate(data)
 }
 
 
-app.get('/:articleSelect', function (req, res) {
-    var articleSelect = req.params.articleSelect;
-  res.send(createTemplate(articles[articleSelect]));
-});
 
 
 

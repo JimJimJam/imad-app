@@ -70,8 +70,9 @@ function createTemplate(data)
             return htmlTemplate;
 }
 
-var articleSelect = req.params.articleSelect;
+
 app.get('/:articleSelect', function (req, res) {
+    var articleSelect = req.params.articleSelect;
   res.send(createTemplate(articles[articleSelect]));
 });
 

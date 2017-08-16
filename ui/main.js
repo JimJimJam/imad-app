@@ -1,4 +1,4 @@
 console.log('Loaded!');
-var element = getElementById("here")
+var element = getElementById("here");
 
-element.innerHTML = "<h3>Replaced Original data</h3>"
+element.innerHTML = "<h3>Replaced Original data</h3>";

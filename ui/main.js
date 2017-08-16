@@ -4,8 +4,11 @@ var element = document.getElementById('here');
 element.innerHTML = "<h3>Replaced Original data</h3>";
 
 var img = document.getElementById('image');
+var margin =0;
 
-img.onclick = function() {
-    img.style.marginLeft = '100px';
+ function moveRight() {
+    margin = margin + 10;
+    img.marginLeft = margin+"px";
     
-};
+}
+img.onclick =  setInterval(moveRight(),100);

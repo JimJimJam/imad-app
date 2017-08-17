@@ -7,10 +7,7 @@ var counter = 0;
 
 app.use(morgan('combined'));
 
-app.get('/counter', function(req,res) {
-    counter++;
-    res.send(counter.toString());
-});
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -33,7 +30,10 @@ app.get('/:articleSelect', function (req, res) {
   res.send(createTemplate(articles[articleSelect]));
 });
 
-
+app.get('/counter', function(req,res) {
+    counter++;
+    res.send(counter.toString());
+});
 
 
 var articles = {

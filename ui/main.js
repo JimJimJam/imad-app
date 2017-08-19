@@ -24,5 +24,5 @@ img.onclick = function(){
 
 but.onclick = function changeClickDisplay(){
   bcounter++;
-  clickdisplay.innerHTML(bcounter.toString());
+  clickdisplay.innerHTML("bcounter.toString()");
 };

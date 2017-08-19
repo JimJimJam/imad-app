@@ -42,9 +42,10 @@ img.onclick = function(){
 but.onclick = function(){
   bcounter = bcounter + 1;
   clickdisplay.innerHTML = "The button has been clicked" + " " + bcounter.toString() + " " + "times";
-};
+
 
 //invoke the request
 
 request.open(GET,"http://lincet123.imad.hasura-app.io/counter",true);
 request.send(null);
+};

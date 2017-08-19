@@ -24,6 +24,6 @@ img.onclick = function(){
 } ;
 
 but.onclick = function(){
-  bcounter++;
+  bcounter = bcounter + 1;
   clickdisplay.innerHTML(bcounter.toString());
 };

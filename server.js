@@ -8,8 +8,8 @@ var counter = 0;
 app.use(morgan('combined'));
 
 app.get('/counter', function(req,res) {
-    bcounter++;
-    //res.send(counter.toString());
+    counter++;
+    res.send(counter.toString());
 });
 
 

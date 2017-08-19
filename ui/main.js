@@ -22,9 +22,9 @@ var request = new XMLHttpRequest();
        { //take some action
        }
             if(request.status === 200)
-             {
+             {   
                  var count = request.responseText;
-                 var span = document.getElementById('The counter variable has the value:' + count);
+                 var span = document.getElementById('timesCounter');
              }
              
     
@@ -42,6 +42,7 @@ img.onclick = function(){
 but.onclick = function(){
   bcounter = bcounter + 1;
   clickdisplay.innerHTML = "The button has been clicked" + " " + bcounter.toString() + " " + "times";
+  span.innerHTML = 'The counter variable has the value:' + count.toString();
 
 
 //invoke the request

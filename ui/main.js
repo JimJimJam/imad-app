@@ -3,7 +3,14 @@ var element = document.getElementById('here');
 
 element.innerHTML = "<h3>Replaced Original data</h3>";
 
+var counter = 0;
+
 var img = document.getElementById('image');
+
+var but = document.getElementById("button");
+
+var clickdisplay = document.getElementById("times");
+
 var margin =0;
 
  function moveRight() {
@@ -14,3 +21,8 @@ var margin =0;
 img.onclick = function(){
    var interval = setInterval(moveRight,50); 
 } ;
+
+but.onclick = function changeClickDisplay(){
+  counter++;
+  clickdisplay.innerHTML(counter);
+}

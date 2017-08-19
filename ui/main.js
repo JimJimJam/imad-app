@@ -25,6 +25,7 @@ var request = new XMLHttpRequest();
              {   
                  var count = request.responseText;
                  var span = document.getElementById('timesCounter');
+                 span.innerHTML = 'The counter variable has the value:' + count.toString();
              }
              
     
@@ -42,7 +43,7 @@ img.onclick = function(){
 but.onclick = function(){
   bcounter = bcounter + 1;
   clickdisplay.innerHTML = "The button has been clicked" + " " + bcounter.toString() + " " + "times";
-  span.innerHTML = 'The counter variable has the value:' + count.toString();
+  
 
 
 //invoke the request

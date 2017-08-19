@@ -48,6 +48,6 @@ but.onclick = function(){
 
 //invoke the request
 
-request.open(GET,"http://lincet123.imad.hasura-app.io/counter",true);
+request.open('GET',"http://lincet123.imad.hasura-app.io/counter",true);
 request.send(null);
 };

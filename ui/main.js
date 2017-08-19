@@ -8,7 +8,7 @@ var bcounter = 0;
 
 var img = document.getElementById('image');
 
-var but = document.getElementById("button1");
+var but = document.getElementById("button");
 
 var clickdisplay = document.getElementById("times");
 

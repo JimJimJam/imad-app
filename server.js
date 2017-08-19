@@ -9,7 +9,7 @@ app.use(morgan('combined'));
 
 app.get('/counter', function(req,res) {
     counter++;
-    res.send(counter.toString());
+    //res.send(counter.toString());
 });
 
 

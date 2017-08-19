@@ -25,5 +25,5 @@ img.onclick = function(){
 
 but.onclick = function(){
   bcounter = bcounter + 1;
-  clickdisplay.innerHTML = "The button has been clicked" + bcounter.toString() + "times";
+  clickdisplay.innerHTML = "The button has been clicked" + " " + bcounter.toString() + " " + "times";
 };

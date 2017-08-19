@@ -3,7 +3,7 @@ var element = document.getElementById('here');
 
 element.innerHTML = "<h3>Replaced Original data</h3>";
 
-var counter = 0;
+var bcounter = 0;
 
 var img = document.getElementById('image');
 
@@ -23,6 +23,6 @@ img.onclick = function(){
 } ;
 
 but.onclick = function changeClickDisplay(){
-  counter++;
-  clickdisplay.innerHTML(counter);
-}
+  bcounter++;
+  clickdisplay.innerHTML(bcounter.toString());
+};

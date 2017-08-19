@@ -22,7 +22,7 @@ img.onclick = function(){
    var interval = setInterval(moveRight,50); 
 } ;
 
-but.onclick = function changeClickDisplay(){
+but.onclick = function (){
   bcounter++;
   clickdisplay.innerHTML("bcounter.toString()");
 };
